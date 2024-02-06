@@ -18,9 +18,10 @@
                         </a>
                     </span>
                     <span class="fa-stack">
-                        <a href="#your-link">
+                        <a href="https://www.tiktok.com/@luckycharm.money">
                             <i class="fas fa-circle fa-stack-2x"></i>
-                            <i class="fa-brands fa-x-twitter fa-stack-1x"></i>
+                            {{-- <i class="fa-brands fa-x-twitter fa-stack-1x"></i> --}}
+                            <i class="fa-brands fa-tiktok fa-stack-1x"></i>
                         </a>
                     </span>
                    
@@ -31,7 +32,7 @@
                         </a>
                     </span>
                     <span class="fa-stack">
-                        <a href="#your-link">
+                        <a href="https://www.youtube.com/channel/UCSohy6gIKCrGNhI2fESTI1g">
                             <i class="fas fa-circle fa-stack-2x"></i>
                             <i class="fab fa-youtube fa-stack-1x"></i>
                         </a>

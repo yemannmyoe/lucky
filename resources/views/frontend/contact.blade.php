@@ -22,13 +22,15 @@
     
     <!-- Styles -->
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
-
-
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
-    <link href="/css/bootstrap.min.css" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css" rel="stylesheet">
-    <link href="/css/swiper.css" rel="stylesheet">
-	<link href="/css/styles.css" rel="stylesheet">
+
+    
+    <link href="{{asset('css/bootstrap.min.css')}}" rel="stylesheet">
+    <link href="{{asset('css/fontawesome-all.min.css')}}" rel="stylesheet">
+    <link href="{{asset('css/swiper.css')}}" rel="stylesheet">
+	<link href="{{asset('css/styles.css')}}" rel="stylesheet">
+   
+
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 	<!-- Favicon  -->
@@ -103,7 +105,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-xl-10 offset-xl-1">
-                    <h1>Our Location</h1>
+                    <h1>Contact Us</h1>
                 </div> <!-- end of col -->
             </div> <!-- end of row -->
         </div> <!-- end of container -->
@@ -112,7 +114,7 @@
    
 
 
-    <div class="ex-basic-1 pt-5 pb-5">
+    {{-- <div class="ex-basic-1 pt-5 pb-5">
         <div class="container2">
           
                 <div class="col-lg-12">
@@ -122,26 +124,82 @@
             </div> <!-- end of row -->
         </div> <!-- end of container -->
     </div>
-   
+    --}}
 
 
     <!-- ----contact----- -->
 
-    <div id="contact" class="form-1" style="padding-top: 0;">
+    <div id="contact" class="form-1" style="padding-top: 20px;">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <h2 class="h2-heading"><span>Contact Us</span></h2>
-                    <p class="p-heading"><span style="font-weight: bold;">Myanmar :</span> No. (8), Moe Ma Kha (1) Street, Ma Li Kha Garden Housing, Thingangyun Township, Yangon, Myanmar. </p>
+                    {{-- <h2 class="h2-heading"><span>Contact Us</span></h2> --}}
+                    
+                    <div class="row">
+                        <div class="col-md-6">
+                           <h5 style="text-align: left;"> Myanmar Representative</h5>
+                            <ul class="list-unstyled mb-5">
+                                <li  i class="d-flex mb-2" style="text-align: left;">
+                                  <span class="mr-3" style="font-size: 15px; font-weight:700;"><i class="fas fa-map-marker-alt"></i> 
+                                    &nbsp;No. (8), Moe Ma Kha (1) Street, Ma Li Kha Garden Housing, Thingangyun Township, Yangon, Myanmar.
+                                  </span>
+                                
+                                </li>
+                                <li class="d-flex mb-2">
+                                    <span class="mr-3" style=" font-size: 15px; font-weight:700;"><i class="fas fa-phone"></i> 
+                                        &nbsp;<a href="tel:00817202212">Myanmar : +95 9778899880</a>
+                                      </span>
+                                </li>
 
-                      {{-- <p class="p-heading"><span style="font-weight: bold;"> Bangkok : </span> 838/302(B12A05), Sukhumvit 50, Phra Khanong, Khlong Toei, 10260.</p>   --}}
-                    <ul class="list-unstyled li-space-lg">
+                                <li class="d-flex mb-2">
+                                    <span class="mr-3" style=" font-size: 15px; font-weight:700;">
+                                        <i class="fas fa-envelope"></i> &nbsp;<a href="mailto:lorem@ipsum.com">hello@luckycharm.money</a>
+                                      </span>
+                                </li>
+                              
+                              </ul>
+                        </div>
+
+                        <div class="col-md-6">
+                            <h5 style="text-align: left;"> Bangkok Office</h5>
+                             <ul class="list-unstyled mb-5">
+                                 <li class="d-flex mb-2" style="text-align: left;">
+                                   <span class="mr-3" style="font-size: 15px; font-weight:700;"><i class="fas fa-map-marker-alt"></i> 
+                                     &nbsp; 9/1, The Preston Townhome, Krungthep Kritha Soi 7, Huamark, Bangkapi, Bangkok 10240
+                                   </span>
+                                 
+                                 </li>
+                                 <li class="d-flex mb-2" style="text-align: left;">
+                                     <span class="mr-3" style=" font-size: 15px; font-weight:700;"><i class="fas fa-phone"></i> 
+                                         &nbsp;<a href="tel:00817202212">Bangkok : +66813727513 , +0813727513</a>
+                                       </span>
+                                 </li>
+
+                                 <li class="d-flex mb-2">
+                                    <span class="mr-3" style=" font-size: 15px; font-weight:700;">
+                                        <i class="fas fa-envelope"></i> &nbsp;<a href="mailto:lorem@ipsum.com">hello@luckycharm.money</a>
+                                      </span>
+                                </li>
+                               </ul>
+                         </div>
+
+                     
+                        
+                    </div>
+
+                    
+
+
+                    {{-- <p class="p-heading"><span style="font-weight: bold;">Myanmar :</span> No. (8), Moe Ma Kha (1) Street, Ma Li Kha Garden Housing, Thingangyun Township, Yangon, Myanmar. </p> --}}
+
+
+                    {{-- <ul class="list-unstyled li-space-lg">
                         <li><i class="fas fa-map-marker-alt"></i> &nbsp;Myanmar & Bangkok</li>
                         <li><i class="fas fa-phone"></i> &nbsp;<a href="tel:00817202212">Myanmar: +95 9778899880</a></li>
                         <li><i class="fas fa-phone"></i> &nbsp;<a href="tel:00817202212">Bangkok: +66813727513 / +0813727513</a></li>
                         
                         <li><i class="fas fa-envelope"></i> &nbsp;<a href="mailto:lorem@ipsum.com">info@lucychainmyanmar.com</a></li>
-                    </ul>
+                    </ul> --}}
                 </div> 
             </div> 
             <div class="row">
@@ -244,10 +302,10 @@
                                 <i class="fab fa-facebook-f fa-stack-1x"></i>
                             </a>
                         </span>
-                        <span class="fa-stack">
-                            <a href="#your-link">
+                       <span class="fa-stack">
+                            <a href="https://www.tiktok.com/@luckycharm.money">
                                 <i class="fas fa-circle fa-stack-2x"></i>
-                                <i class="fa-brands fa-x-twitter fa-stack-1x"></i>
+                                <i class="fa-brands fa-tiktok fa-stack-1x"></i>
                             </a>
                         </span>
                        
@@ -258,7 +316,7 @@
                             </a>
                         </span>
                         <span class="fa-stack">
-                            <a href="#your-link">
+                            <a href="https://www.youtube.com/channel/UCSohy6gIKCrGNhI2fESTI1g">
                                 <i class="fas fa-circle fa-stack-2x"></i>
                                 <i class="fab fa-youtube fa-stack-1x"></i>
                             </a>
@@ -300,13 +358,14 @@
     </button>
     <!-- end of back to top button -->
     	
-    <!-- Scripts -->
-    <script src="/js/bootstrap.min.js/"></script> <!-- Bootstrap framework -->
+
+
+    <script src="{{asset('js/bootstrap.min.js')}}"></script> <!-- Bootstrap framework -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script src="/js/swiper.min.js/"></script> <!-- Swiper for image and text sliders -->
-    <script src="/js/purecounter.min.js"></script> <!-- Purecounter counter for statistics numbers -->
-    <script src="/js/isotope.pkgd.min.js"></script> <!-- Isotope for filter -->
-    <script src="/js/scripts.js"></script> <!-- Custom scripts -->
+    <script src="{{asset('js/swiper.min.js')}}"></script> <!-- Swiper for image and text sliders -->
+    <script src="{{asset('js/purecounter.min.js')}}"></script> <!-- Purecounter counter for statistics numbers -->
+    <script src="{{asset('js/isotope.pkgd.min.js')}}"></script> <!-- Isotope for filter -->
+    <script src="{{asset('js/scripts.js')}}"></script> <!-- Custom scripts -->
    
 </body>
 </html>

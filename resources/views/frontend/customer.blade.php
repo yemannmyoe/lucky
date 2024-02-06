@@ -22,10 +22,10 @@
     
     <!-- Styles -->
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
-    <link href="/css/bootstrap.min.css" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css" rel="stylesheet">
-    <link href="/css/swiper.css" rel="stylesheet">
-	<link href="/css/styles.css" rel="stylesheet">
+    <link href="{{asset('css/bootstrap.min.css')}}" rel="stylesheet">
+    <link href="{{asset('css/fontawesome-all.min.css')}}" rel="stylesheet">
+    <link href="{{asset('css/swiper.css')}}" rel="stylesheet">
+	<link href="{{asset('css/styles.css')}}" rel="stylesheet">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
@@ -224,9 +224,9 @@
                             </a>
                         </span>
                         <span class="fa-stack">
-                            <a href="#your-link">
+                            <a href="https://www.tiktok.com/@luckycharm.money">
                                 <i class="fas fa-circle fa-stack-2x"></i>
-                                <i class="fa-brands fa-x-twitter fa-stack-1x"></i>
+                                <i class="fa-brands fa-tiktok fa-stack-1x"></i>
                             </a>
                         </span>
                        
@@ -237,7 +237,7 @@
                             </a>
                         </span>
                         <span class="fa-stack">
-                            <a href="#your-link">
+                            <a href="https://www.youtube.com/channel/UCSohy6gIKCrGNhI2fESTI1g">
                                 <i class="fas fa-circle fa-stack-2x"></i>
                                 <i class="fab fa-youtube fa-stack-1x"></i>
                             </a>
@@ -280,11 +280,11 @@
     <!-- end of back to top button -->
     	
     <!-- Scripts -->
-    <script src="/js/bootstrap.min.js"></script> <!-- Bootstrap framework -->
+    <script src="{{asset('js/bootstrap.min.js')}}"></script> <!-- Bootstrap framework -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script src="/js/swiper.min.js"></script> <!-- Swiper for image and text sliders -->
-    <script src="/js/purecounter.min.js"></script> <!-- Purecounter counter for statistics numbers -->
-    <script src="/js/isotope.pkgd.min.js"></script> <!-- Isotope for filter -->
-    <script src="/js/scripts.js"></script> <!-- Custom scripts -->
+    <script src="{{asset('js/swiper.min.js')}}"></script> <!-- Swiper for image and text sliders -->
+    <script src="{{asset('js/purecounter.min.js')}}"></script> <!-- Purecounter counter for statistics numbers -->
+    <script src="{{asset('js/isotope.pkgd.min.js')}}"></script> <!-- Isotope for filter -->
+    <script src="{{asset('js/scripts.js')}}"></script> <!-- Custom scripts -->
 </body>
 </html>
