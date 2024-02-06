@@ -356,7 +356,6 @@
 
                                 <!-- Slide -->
                                 <div class="swiper-slide">
-                                   
                                     
                                         <div class="card-body">
                                            
