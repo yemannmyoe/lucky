@@ -33,9 +33,8 @@
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css" rel="stylesheet"/>
 
-
+    
    
 
 	<!-- Favicon  -->
@@ -214,7 +213,37 @@
                         <div class="form-group">
                             <button type="submit" class="form-control-submit-button">Submit</button>
                         </div>
+
+                          <!-- Success Modal -->
+                      <div class="modal fade" id="successModal" tabindex="-1" role="dialog" aria-labelledby="successModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                     <div class="modal-content">
+                
+                        <!-- Modal Header -->
+                        <div class="modal-header">
+                        <h4 class="modal-title">Form submitted successfully</h4>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                        </div>
+                
+                        <!-- Modal body -->
+                        <div class="modal-body">
+                            Thank you! The form has been submitted successfully. We will reply to you soon!
+                        </div>
+                
+                        <!-- Modal footer -->
+                        <div class="modal-footer">
+                        <button type="button" class="btn btn-success" data-bs-dismiss="modal">Close</button>
+                        </div>
+                
+                    </div>
+                    </div>
+                </div>
                     </form>
+
+
+
+
+
                     <script>
                         function validateRecaptcha() {
                             var response = grecaptcha.getResponse();
@@ -243,14 +272,18 @@
                                 body: formData,
                             })
                             .then(response => {
-                                if (!response.ok) {
-                                    throw new Error('Network response was not ok');
-                                }
-                                // Redirect to the desired web page
-                                window.location.href = 'https://web3forms.com/success'; // Change the URL accordingly
+                                    if (!response.ok) {
+                                        throw new Error('Network response was not ok');
+                                    }
 
-                                // return response.json();
-                            })
+                                    // Show success modal
+                                    $('#successModal').modal('show');
+
+                                    // Redirect to the desired web page after modal is closed
+                                    $('#successModal').on('hidden.bs.modal', function () {
+                                        window.location.href = "/";
+                                    });
+                                })
                             .catch(error => {
                                 // Handle error
                                 console.error('There was a problem with the fetch operation:', error);
@@ -339,6 +372,9 @@
     </button>
     <!-- end of back to top button -->
     	
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+
     <!-- Scripts -->
     <script src="{{asset('js/bootstrap.min.js')}}"></script> <!-- Bootstrap framework -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>

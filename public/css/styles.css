@@ -546,6 +546,15 @@ select {
 	
 }
 
+.dark-mode #error-message{
+	color: var(--primary);
+}
+
+
+.dark-mode .list-unstyled{
+	color: var(--primary);
+}
+
 /**********************/
 /*     Navigation     */
 /**********************/
